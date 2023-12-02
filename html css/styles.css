@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+#nav{
+    position: relative;
+    /* background-color: red; */
+    height: 10vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding :0px 30px;
+    position: fixed;
+    z-index: 999;
+    
+}
+#nav #right
+{
+    display: flex;
+    gap: 30px;
+}
+#nav #left h4
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+#nav #right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    
+}
+#about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: gray; */
+    padding-top: 10vh;
+    /* margin-top: 10vh; */
+    /* background-color: red; */
+}
+#center{
+    height: 100vh ;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+
+    
+}
+#center #left{
+    height: 100%;
+    width: 50%;
+    /* background-color: orange; */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+#left #circle{
+    height: 60%;
+    width: 50%;
+    border-radius: 50%;
+    /* background-color: palevioletred; */
+    background-image: url(.//imgs/harsh.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+
+}
+#center #right{
+    height: 100%;
+    width: 50%;
+    /* background-color: palegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#center #right h1{
+    font-size: 5vw;
+}
+#center #right p{
+    width: 60%;
+    font-size: 1.5vw;
+    margin-left: 30px;
+    line-height: 2.5vw;
+}
+#center #right p span{
+    font-size: 2vw;
+    color:#ffffff69
+}
+#center #mid{
+    margin-top: 20px;
+    height: 80%;
+    width: 1.5px;
+    background-color: #fff;
+}
+#projects{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+    /* background-color: orange; */
+    display: flex;
+}
+#projects #left
+{
+    position: relative;
+    height: 100%;
+    width: 33%;
+    /* background-color: palevioletred; */
+    
+}
+.project{
+    
+    height: 70%;
+    width: 90%;
+    /* background-color: papayawhip; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    border: 2px solid #faf6f68f
+    /* overflow: hidden; */
+}
+.project img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+
+}
+ .project h1{
+    font-size: 2.3vw;
+    font-weight: 700;
+    color: #fff;
+    
+}
+#projects #center
+{   
+    position: relative;
+    height: 100%;
+    width: 33%;
+    /* background-color: lavender; */
+    
+}
+
+#projects #right
+{
+    position: relative;
+    height: 100%;
+    width: 34%;
+    /* background-color: bisque; */
+}
+
+#education{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#education h1{
+    font-size: 4vw;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f26f;
+}
+a{
+    transition: all ease 1s;
+}
+#skills
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills h1{
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+#skills #center{
+    height: 80%;
+    width: 60%;
+    /* background-color: aquamarine; */
+    
+}
+ol{
+    width: 100%;
+    height: 100%;
+    background-color:#4a4a4a73;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding: 0px 80px;
+    justify-content: center;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.mix{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    
+}
+.mix li{
+    font-size: 2vw;
+    
+}
+.mix h5{
+    font-size: 1.8vw;
+}
+.mix a{
+    text-decoration: none;
+    color: #ffffffb6;
+}
