@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div id="main">
+        
+        <div id="nav">
+            <div id="left">
+                <h4>Harsh Kachhawa</h4>
+            </div>
+            <div id="right">
+                <a href="#about"onclick="smoothScroll('about')">About</a>
+                <a href="#projects"onclick="smoothScroll('projects')">Projects</a>
+                <a href="#education"onclick="smoothScroll('education')">Education</a>
+                <a href="#skills"onclick="smoothScroll('skills')">Skills</a>
+            </div>
+        </div>
+        <div id="about">
+            <div id="center">
+                <div id="left">
+                        <div id="circle">
+                            
+                        </div>
+                </div>
+                <div id="mid"></div>
+                <div id="right">
+                        <h1>About Me</h1>
+                        <p>I am a final year B.Tech student at Kalinga Institute Of 
+                            Industrial Technology.My skills include DSA, Frontend Web 
+                            Development.Furthurmore, I am an incoming intern at <span>Kickdrum</span>.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div id="left">
+                <div class="project">
+                    <img src="./imgs/project1.png" alt="">
+                    <h1>Landing Page For CocaCola</h1>
+                    
+                </div>
+            </div>
+            <div id="center">
+                <div class="project">
+                <img src="./imgs/project2.png" alt="">
+                <h1>Kachhawa Web Developers</h1>
+            </div>
+            </div>
+            <div id="right">
+                <div class="project">
+                    <img src="./imgs/project3.png" alt="">
+                    <h1>Apple's Website Clone</h1>
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <h1>Education Details</h1>
+            <table>
+                <tr>
+                <th>Education</th>
+                <th>Subjects</th>
+                <th>Score</th>
+                <th>School</th>
+            </tr>
+                <tr>
+                    <td>ICSE</td>
+                    <td>Science</td>
+                    <td>89.2%</td>
+                    <td>AGCS</td>
+                </tr>
+                <tr>
+                    <td>ISC</td>
+                    <td>Science</td>
+                    <td>91%</td>
+                    <td>AGCS</td>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>CSE</td>
+                    <td>8.98CGPA</td>
+                    <td>KIIT</td>
+                </tr>
+            </table>
+        </div>
+        <div id="skills">
+            <h1>My Skills</h1>
+            <div id="center">
+                <ol>
+                    <div class="mix">
+                        <li>HTML </li>
+                        <h5>Proficient</h5>
+                    </div>
+                    <div class="mix">
+                        <li>CSS</li>
+                        <h5>Proficient</h5>
+                    </div>
+                    <div class="mix">
+                        <li>JS</li>
+                        <h5>Proficient</h5>
+                    </div>
+                    <div class="mix">
+                        <li>DSA</li>
+                        <h5>Learner</h5>
+                    </div>
+                    <div class="mix">
+                        <li>GitHub <a href="https://github.com/iam-hk">(Click)</a></li>
+                        <h5>Learner</h5>
+                    </div>
+                    
+                    
+                    
+                    
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+                const rect = targetElement.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+                window.scrollTo({
+                    top: rect.top + scrollTop,
+                    behavior: 'smooth',
+                    duration:1
+                });
+            }
+        }
+ 
+    </script>
+    
+</body>
+</html>
