@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+#main
+{
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+}
+#funct{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 1.4vw;
+    border:none;
+    font-weight: 500;
+}
